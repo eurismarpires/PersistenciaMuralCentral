@@ -9,9 +9,22 @@
 <html>
 <head>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Aluno</h1>
+<div id="menu">
+    <ul>
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="aluno.jsp">Aluno</a></li>
+        <li><a href="">Curso</a></li>
+        <li><a href="">Disciplina</a></li>
+        <li><a href="">Docente</a></li>
+        <li><a href="">Orgão</a></li>
+        <li><a href="">Técnico</a></li>
+        <li><a href="">Turma</a></li>
+        <li><a href="_ah/admin">Admin</a></li>
+    </ul>
+</div>
     <form method="post" action="servlet/Aluno">
         <!-- DADOS PESSOAIS-->
         <fieldset>
@@ -36,5 +49,10 @@
         <input type="submit">
         <input type="reset" value="Limpar">
     </form>
+    <form>
+
+        <a href="/servlet/listaAlunos">Listagem de Alunos</a>
+
+
 </body>
 </html>

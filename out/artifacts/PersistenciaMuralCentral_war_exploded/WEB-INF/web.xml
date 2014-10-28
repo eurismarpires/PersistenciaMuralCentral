@@ -7,8 +7,18 @@
         <servlet-name>Aluno</servlet-name>
         <servlet-class>br.ufg.inf.fabrica.muralufg.central.servlet.Aluno</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>listaAlunos</servlet-name>
+        <servlet-class>br.ufg.inf.fabrica.muralufg.central.servlet.listaAlunos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Aluno</servlet-name>
         <url-pattern>/servlet/Aluno</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>listaAlunos</servlet-name>
+        <url-pattern>/servlet/listaAlunos</url-pattern>
     </servlet-mapping>
 </web-app>
