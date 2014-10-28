@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Aluno</h1>
-    <form method="post" action="servlet/Servlet">
+    <form method="post" action="servlet/Aluno">
         <!-- DADOS PESSOAIS-->
         <fieldset>
             <legend>Dados Pessoais</legend>
