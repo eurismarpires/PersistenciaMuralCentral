@@ -1,11 +1,14 @@
 package br.ufg.inf.fabrica.muralufg.central.servlet;
 
+import com.google.appengine.api.datastore.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
 /**
  * Created by Eurismar on 27/10/2014.
@@ -17,14 +20,15 @@ public class listaAlunos extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        htmlListagemAlunos(request,response);
+        htmlListagemAlunos(request, response);
 
 
     }
-    private void htmlListagemAlunos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+
+    private void htmlListagemAlunos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        response.addHeader("contentType","text/html;charset=UTF-8");
-        response.addHeader("language","java");
+        response.addHeader("contentType", "text/html;charset=UTF-8");
+        response.addHeader("language", "java");
         out.print("<html>");
         out.print("<head>");
         out.print("<title>Menu Horizontal</title>");
@@ -33,7 +37,25 @@ public class listaAlunos extends HttpServlet {
         out.print("<body>");
         out.print("<a href=\"..\\aluno.jsp\">Voltar</a>");
         out.print("<h1>Listagem de Alunos</h1>");
+        buscarListaNoBanco(request, response);
         out.print("</body");
         out.print("</html>");
+    }
+
+    private void buscarListaNoBanco(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+        resp.getWriter().println("<ul>");
+        List<Entity> alunos = getListaDeAlunos();
+        for (Entity entity : alunos) {
+            resp.getWriter().println("<li>" + entity.getProperty("nome") + "</li>");
+        }
+        resp.getWriter().println("</ul>");
+    }
+
+    private List<Entity> getListaDeAlunos() {
+        DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+        Query q = new Query("Aluno")
+                .addSort("nome", Query.SortDirection.DESCENDING);
+        PreparedQuery pq = datastore.prepare(q);
+        return pq.asList(FetchOptions.Builder.withLimit(10));
     }
 }
