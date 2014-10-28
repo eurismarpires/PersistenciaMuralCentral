@@ -46,16 +46,15 @@ public class listaAlunos extends HttpServlet {
         resp.getWriter().println("<ul>");
         List<Entity> alunos = getListaDeAlunos();
         for (Entity entity : alunos) {
-            resp.getWriter().println("<li>" + entity.getProperty("nome") + "</li>");
+            resp.getWriter().println("<li>" + entity.getProperty("matricula") + " - " +  entity.getProperty("nome") + "</li>");
         }
         resp.getWriter().println("</ul>");
     }
 
     private List<Entity> getListaDeAlunos() {
         DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-        Query q = new Query("Aluno")
-                .addSort("nome", Query.SortDirection.DESCENDING);
+        Query q = new Query("Aluno").addSort("nome", Query.SortDirection.ASCENDING);
         PreparedQuery pq = datastore.prepare(q);
-        return pq.asList(FetchOptions.Builder.withLimit(10));
+        return pq.asList(FetchOptions.Builder.withDefaults());
     }
 }
