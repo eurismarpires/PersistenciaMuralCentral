@@ -54,12 +54,16 @@ package br.ufg.inf.fabrica.muralufg.central.organizacao;
 
 import br.ufg.inf.fabrica.muralufg.central.seguranca.Usuario;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
+
 /**
  * Representa um aluno devidamente matriculado em determinada disciplina,
  * ou seja, aluno de uma dada turma.
  * <p>Trata-se de um <i>value object</i>.</p>
  */
-public class Aluno extends Usuario {
+@XmlRootElement
+public class Aluno extends Usuario implements Serializable {
     private String nome;
     private String matricula;
 
@@ -69,6 +73,10 @@ public class Aluno extends Usuario {
 
     public String getMatricula() {
         return matricula;
+    }
+
+    public Aluno() {
+
     }
 
     public Aluno(String nome, String matricula) {

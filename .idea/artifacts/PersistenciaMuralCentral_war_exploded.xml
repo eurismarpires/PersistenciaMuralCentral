@@ -10,6 +10,8 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="AppEngine API" />
           <element id="library" level="project" name="asm-3.1" />
+          <element id="library" level="project" name="gson-2.3" />
+          <element id="library" level="project" name="json" />
         </element>
       </element>
     </root>

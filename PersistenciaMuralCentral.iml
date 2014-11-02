@@ -28,6 +28,8 @@
     <orderEntry type="library" name="AppEngine API" level="project" />
     <orderEntry type="library" name="lib" level="application" />
     <orderEntry type="library" name="asm-3.1" level="project" />
+    <orderEntry type="library" name="gson-2.3" level="project" />
+    <orderEntry type="library" name="json" level="project" />
   </component>
 </module>
 
