@@ -52,7 +52,8 @@
     <form>
 
         <a href="/servlet/listaAlunos">Listagem de Alunos</a>
-
+        <br>
+        <a href="../resources/ar/alunos">Listagem de Alunos JSON</a>
 
 </body>
 </html>

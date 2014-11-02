@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b320fdb2-2838-4a0b-b9a0-1972d3db4801" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/json.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_4_3.xml" />
+      <change type="DELETED" beforePath="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\.idea\libraries\gson_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\src\br\ufg\inf\fabrica\muralufg\central\resource\AlunoConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\src\br\ufg\inf\fabrica\muralufg\central\resource\EmployeeResource.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\.idea\libraries\asm_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jersey.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/EmployeeResource.java" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/EmployeeResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PersistenciaMuralCentral.iml" afterPath="$PROJECT_DIR$/PersistenciaMuralCentral.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/PersistenciaMuralCentral_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/PersistenciaMuralCentral_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/aluno.jsp" afterPath="$PROJECT_DIR$/web/aluno.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/json.xml" afterPath="$PROJECT_DIR$/.idea/libraries/json.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java" afterPath="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PersistenciaMuralCentral.iws" />
@@ -37,85 +42,41 @@
         <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/Aluno.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listaAlunos.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java">
+      <file leaf-file-name="aluno.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/aluno.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="986">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
+            <state vertical-scroll-proportion="-26.26923" vertical-offset="235" max-vertical-offset="1105">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appengine-web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/appengine-web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-              <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeResource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/EmployeeResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#623#630#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlunoResource.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AlunoResource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.09577465" vertical-offset="0" max-vertical-offset="986">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1168#1175#0" expanded="true" />
-                <element signature="e#2028#2044#0" expanded="true" />
+                <element signature="e#641#648#0" expanded="true" />
+                <element signature="e#1342#1349#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlunoConverter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoConverter.java">
+      <file leaf-file-name="Usuario.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5028169" vertical-offset="0" max-vertical-offset="710">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,11 +84,32 @@
       <file leaf-file-name="Aluno.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3026#3027#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listaAlunos.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1003">
+              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="629">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,16 +134,17 @@
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/Aluno.java" />
         <option value="$PROJECT_DIR$/web/style.css" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/aluno.jsp" />
-        <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/appengine-web.xml" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servicos/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servicos/FilmesResource.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/EmployeeResource.java" />
-        <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoConverter.java" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoGson.java" />
+        <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java" />
+        <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java" />
+        <option value="$PROJECT_DIR$/web/aluno.jsp" />
         <option value="$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java" />
       </list>
     </option>
@@ -428,14 +411,17 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GOOGLE_APP_ENGINE_ACCOUNT_EMAIL" value="eurismarpires@gmail.com" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/json.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-core-2.4.3.jar!/" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.ufg.inf.fabrica.muralufg.central.resource" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\src\br\ufg\inf\fabrica\muralufg\central\resource" />
       <recent name="C:\Users\Eurismar\IdeaProjects\PersistenciaMuralCentral\src\br\ufg\inf\fabrica\muralufg\central\seguranca" />
@@ -708,7 +694,7 @@
       <created>1414449080365</created>
       <updated>1414449080365</updated>
       <workItem from="1414449083753" duration="20551000" />
-      <workItem from="1414877335749" duration="14828000" />
+      <workItem from="1414877335749" duration="21147000" />
     </task>
     <task id="LOCAL-00001" summary="Algumas correções">
       <created>1414471928937</created>
@@ -718,11 +704,15 @@
       <created>1414879522644</created>
       <updated>1414879522644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criado uma classe para testar webservice rest com xml">
+      <created>1414895138182</created>
+      <updated>1414895138182</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35379000" />
+    <option name="totallyTimeSpent" value="41698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -805,7 +795,8 @@
     </option>
     <MESSAGE value="Algumas correções" />
     <MESSAGE value="Criado uma classe para testar webservice rest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado uma classe para testar webservice rest" />
+    <MESSAGE value="Criado uma classe para testar webservice rest com xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criado uma classe para testar webservice rest com xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -874,6 +865,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7753378" vertical-offset="0" max-vertical-offset="680">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,14 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="889" max-vertical-offset="1615">
           <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,6 +896,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -920,26 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="629">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="30" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="710">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/aluno.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1088">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,26 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/Aluno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/TesteSerializacao/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="986">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="58" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1007,53 +962,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java">
+    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/seguranca/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="62" column="45" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/EmployeeResource.java">
+    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/Aluno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/servlet/listaAlunos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1003">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="629">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/aluno.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.26923" vertical-offset="235" max-vertical-offset="1105">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/organizacao/Aluno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <caret line="77" column="48" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#623#630#0" expanded="true" />
+            <element signature="e#3026#3027#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.09577465" vertical-offset="0" max-vertical-offset="986">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1168#1175#0" expanded="true" />
-            <element signature="e#2028#2044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufg/inf/fabrica/muralufg/central/resource/AlunoConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5028169" vertical-offset="0" max-vertical-offset="710">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#641#648#0" expanded="true" />
+            <element signature="e#1342#1349#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1118,6 +1084,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1137,7 +1104,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>json</last-edited>
+          <last-edited>jersey</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

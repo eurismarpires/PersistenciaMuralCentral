@@ -61,6 +61,7 @@ import java.util.Set;
  */
 public class Usuario {
     private String nome;
+    private String matricula;
     private Set<String> registrationIds;
 
     public Usuario() {
@@ -86,4 +87,5 @@ public class Usuario {
     public void setRegistrationIds(Set<String> registrationIds) {
         this.registrationIds = registrationIds;
     }
+
 }

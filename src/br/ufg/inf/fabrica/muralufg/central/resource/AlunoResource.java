@@ -1,72 +1,50 @@
 package br.ufg.inf.fabrica.muralufg.central.resource;
 
-
-
 import br.ufg.inf.fabrica.muralufg.central.organizacao.Aluno;
 import com.google.appengine.api.datastore.*;
 import com.google.appengine.api.datastore.Entity;
-import com.google.gson.Gson;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import javax.swing.text.html.parser.*;
 import javax.ws.rs.Path;
 import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.codehaus.jackson.map.ObjectMapper;
 
 @Path("/ar")
 public class AlunoResource {
     @GET
-    @Path("/aluno")
-    @Produces(MediaType.APPLICATION_XML)
-    public AlunoConverter getAluno() {
-        DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-        Query q = new Query("Aluno").addSort("nome", Query.SortDirection.ASCENDING);
-        PreparedQuery pq = datastore.prepare(q);
-        List<Entity> entityList =  pq.asList(FetchOptions.Builder.withDefaults());
+    @Path("/alunos")
+    @Produces(MediaType.APPLICATION_JSON)
+    public String getAlunos() {
 
-        for (Entity entity : entityList) {
-            Aluno aluno = new Aluno(entity.getProperty("nome").toString(),entity.getProperty("matricula").toString());
-            List<Aluno> alunos = new ArrayList<Aluno>();
-            alunos.add(aluno);
-        }
-        JSONObject alunoJson = new JSONObject();
+        List<Aluno> alunos = new ArrayList<Aluno>();
+        alunos = getListaDeAlunos();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = "";
         try {
-            alunoJson.put("alunos",alunoJson);
-        } catch (JSONException e) {
+            json = objectMapper.writeValueAsString(alunos);
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        Aluno aluno = new Aluno("Eurismar","039923");
-        AlunoConverter converter = new AlunoConverter(aluno);
-
-        return converter;
+        return json;
     }
-    @GET
-    @Path("/alunos")
-    @Produces(MediaType.APPLICATION_XML)
-    public List<AlunoConverter> getAlunos() {
+
+    public static List<Aluno> getListaDeAlunos() {
         DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
         Query q = new Query("Aluno").addSort("nome", Query.SortDirection.ASCENDING);
         PreparedQuery pq = datastore.prepare(q);
-        List<Entity> entityList =  pq.asList(FetchOptions.Builder.withDefaults());
+        List<Entity> alunos = pq.asList(FetchOptions.Builder.withDefaults());
+        List<Aluno> alunoList = new ArrayList<Aluno>();
 
-        List<AlunoConverter> alunos = new ArrayList<AlunoConverter>();
-        for (Entity entity : entityList) {
-            AlunoConverter aluno = new AlunoConverter();
-
-
-            //entity.getProperty("nome").toString(),entity.getProperty("matricula").toString()
-
-
-            alunos.add(aluno);
+        for (Entity entity : alunos) {
+            Aluno aluno = new Aluno();
+            alunoList.add(new Aluno(entity.getProperty("nome").toString(), entity.getProperty("matricula").toString()));
         }
-        return alunos;
+        return alunoList;
     }
-
-
 
 
 

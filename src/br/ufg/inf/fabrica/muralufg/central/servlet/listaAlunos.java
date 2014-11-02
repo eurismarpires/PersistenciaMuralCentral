@@ -1,13 +1,16 @@
 package br.ufg.inf.fabrica.muralufg.central.servlet;
 
 import com.google.appengine.api.datastore.*;
+import com.google.appengine.api.datastore.Entity;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.text.html.parser.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,10 +54,11 @@ public class listaAlunos extends HttpServlet {
         resp.getWriter().println("</ul>");
     }
 
-    private List<Entity> getListaDeAlunos() {
+    public static List<Entity> getListaDeAlunos() {
         DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
         Query q = new Query("Aluno").addSort("nome", Query.SortDirection.ASCENDING);
         PreparedQuery pq = datastore.prepare(q);
         return pq.asList(FetchOptions.Builder.withDefaults());
     }
+
 }

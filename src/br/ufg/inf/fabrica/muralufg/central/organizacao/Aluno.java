@@ -75,6 +75,10 @@ public class Aluno extends Usuario implements Serializable {
         return matricula;
     }
 
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
     public Aluno() {
 
     }
