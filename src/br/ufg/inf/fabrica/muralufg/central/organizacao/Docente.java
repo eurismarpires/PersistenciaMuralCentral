@@ -70,6 +70,10 @@ public class Docente extends Usuario {
         this.orgao = orgao;
     }
 
+    public Docente(String nome) {
+        this.nome = nome;
+    }
+
     public String getNome() {
         return nome;
     }

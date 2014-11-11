@@ -24,6 +24,7 @@
           <li><a href="">Orgão</a></li>
           <li><a href="">Técnico</a></li>
           <li><a href="">Turma</a></li>
+          <li><a href="servicosrest.jsp">Serviços REST JSON</a></li>
           <li><a href="_ah/admin">Admin</a></li>
       </ul>
   </div>

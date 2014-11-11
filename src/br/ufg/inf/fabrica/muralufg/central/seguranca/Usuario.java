@@ -64,6 +64,7 @@ public class Usuario {
     private String matricula;
     private Set<String> registrationIds;
 
+
     public Usuario() {
     }
 
